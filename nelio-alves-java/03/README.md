@@ -1,1 +1,1 @@
-## Exercícios sobre estrutura repetitiva while
+## Estrutura Repetitiva (while)
