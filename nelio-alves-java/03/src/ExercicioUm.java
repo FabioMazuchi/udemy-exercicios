@@ -2,18 +2,19 @@ import java.util.Scanner;
 
 public class ExercicioUm {
 	public static void main(String[] args) {
-		int n;
 
 		Scanner sc = new Scanner(System.in);
 
-		System.out.print("Digite um número inteiro: ");
-		n = sc.nextInt();
+		System.out.print("Digite a senha: ");
+		int x = sc.nextInt();
 
-		if (n < 0) {
-			System.out.println("NEGATIVO");
-		} else {
-			System.out.println("NÃO NEGATIVO");
+		while (x != 2002) {
+			System.out.println("Senha Inválida");
+			System.out.print("Digite a senha: ");
+			x = sc.nextInt();
 		}
+
+		System.out.println("Acesso Permitido");
 
 		sc.close();
 	}

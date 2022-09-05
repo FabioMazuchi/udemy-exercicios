@@ -2,17 +2,22 @@ import java.util.Scanner;
 
 public class ExercicioTres {
 	public static void main(String[] args) {
-		int A, B, C, D, resultado;
+		int x, y;
 
 		Scanner sc = new Scanner(System.in);
 
-		A = sc.nextInt();
-		B = sc.nextInt();
-		C = sc.nextInt();
-		D = sc.nextInt();
+		System.out.print("Digite um número inteiro: ");
+		x = sc.nextInt();
 
-		resultado = A * B - C * D;
+		System.out.print("Digite um número inteiro: ");
+		y = sc.nextInt();
 
-		System.out.println("DIFERENÇA = " + resultado);
+		if (x % y == 0 || y % x == 0) {
+			System.out.println("SÃO MÚLTIPLOS");
+		} else {
+			System.out.println("NÃO SÃO MÚLTIPLOS");
+		}
+
+		sc.close();
 	}
 }

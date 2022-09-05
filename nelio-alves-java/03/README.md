@@ -1,1 +1,1 @@
-## Exercícios sobre Estrutura Condicional (if-else)
+## Exercícios sobre estrutura repetitiva while
