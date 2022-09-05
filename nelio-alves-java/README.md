@@ -1,3 +1,3 @@
-# Exercicios de Java
+# Exercícios de Java
 
-## Professor: Nélio Alves
+### Professor: Nélio Alves
