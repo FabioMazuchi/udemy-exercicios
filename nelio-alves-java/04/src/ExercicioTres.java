@@ -1,40 +1,22 @@
+import java.util.Locale;
 import java.util.Scanner;
 
 public class ExercicioTres {
 	public static void main(String[] args) {
-
+		Locale.setDefault(Locale.US);
 		Scanner sc = new Scanner(System.in);
 
-		int alcool = 0;
-		int gasolina = 0;
-		int diesel = 0;
+		System.out.print("Quantos valores você quer digitar: ");
+		int qtd = sc.nextInt();
 
-		System.out.println("======== POSTO DE COMBUTÍVEL =========");
-		System.out.printf("1 - Álcool%n2 - Gasolina%n3 - Diesel%n4 - Fim%n");
-		System.out.println("======================================");
+		for (int n = 1; n <= qtd; n++) {
+			double a = sc.nextDouble();
+			double b = sc.nextDouble();
+			double c = sc.nextDouble();
 
-		System.out.print("Opção nº: ");
-		int n = sc.nextInt();
-
-		while (n != 4) {
-			if (n == 1) {
-				alcool += 1;
-			} else if (n == 2) {
-				gasolina += 1;
-			} else if (n == 3) {
-				diesel += 1;
-			} else {
-				System.out.println("Código Inválido");
-			}
-
-			System.out.print("Opção nº: ");
-			n = sc.nextInt();
+			double media = (a * 2.0 + b * 3.0 + c * 5.0) / 10.0;
+			System.out.printf("%.1f%n", media);
 		}
-
-		System.out.println("MUITO OBRIGADO");
-		System.out.println("Álcool: " + alcool);
-		System.out.println("Gasolina: " + gasolina);
-		System.out.println("Diesel: " + diesel);
 
 		sc.close();
 	}

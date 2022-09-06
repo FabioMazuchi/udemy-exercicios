@@ -1,0 +1,1 @@
+# Estrutura Sequencial (entrada, processamento, saída)

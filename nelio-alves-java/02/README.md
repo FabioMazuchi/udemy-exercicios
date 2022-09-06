@@ -1,1 +1,1 @@
-### Exercícios sobre Estrutura Sequencial (entrada, processamento, saída)
+# Estrutura Condicional (if-else)

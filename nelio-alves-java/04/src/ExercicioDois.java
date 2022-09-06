@@ -2,32 +2,27 @@ import java.util.Scanner;
 
 public class ExercicioDois {
 	public static void main(String[] args) {
-
 		Scanner sc = new Scanner(System.in);
 
-		System.out.print("Coordenada x: ");
-		int x = sc.nextInt();
+		int in = 0;
+		int out = 0;
 
-		System.out.print("Coordenada y: ");
-		int y = sc.nextInt();
+		System.out.print("Quantos valores você quer digitar: ");
+		int qtd = sc.nextInt();
 
-		while (x != 0 && y != 0) {
-			if (x > 0 && y > 0) {
-				System.out.println("primeiro");
-			} else if (x < 0 && y > 0) {
-				System.out.println("segundo");
-			} else if (x < 0 && y < 0) {
-				System.out.println("terceiro");
+		for (int n = 1; n <= qtd; n++) {
+			System.out.print(n + "º valor inteiro: ");
+			int x = sc.nextInt();
+
+			if (x >= 10 && x <= 20) {
+				in += 1;
 			} else {
-				System.out.println("quarto");
+				out += 1;
 			}
-
-			System.out.print("Coordenada x: ");
-			x = sc.nextInt();
-
-			System.out.print("Coordenada y: ");
-			y = sc.nextInt();
 		}
+
+		System.out.println(in + " in");
+		System.out.println(out + " out");
 
 		sc.close();
 	}

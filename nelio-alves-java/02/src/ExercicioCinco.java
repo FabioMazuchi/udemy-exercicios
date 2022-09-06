@@ -3,23 +3,42 @@ import java.util.Scanner;
 
 public class ExercicioCinco {
 	public static void main(String[] args) {
-		int c1, qtd1, c2, qtd2;
-		double valor1, valor2, total;
 
-		Locale.setDefault(Locale.US);
+		System.out.println("GODIGO     ESPECIFICAÇÃO       PREÇO");
+		System.out.println("---------------------------------------");
+		System.out.println("  1        Cachorro Quente     R$ 4.00");
+		System.out.println("  2        X-Salada            R$ 4.50");
+		System.out.println("  3        X-Bacon             R$ 5.00");
+		System.out.println("  4        Torrada             R$ 2.00");
+		System.out.println("  5        refrigerante        R$ 1.50");
+		System.out.println("---------------------------------------");
+
+		double total = 0;
+
 		Scanner sc = new Scanner(System.in);
 
-		c1 = sc.nextInt();
-		qtd1 = sc.nextInt();
-		valor1 = sc.nextDouble();
+		System.out.println("Digite o código: ");
+		int cod = sc.nextInt();
 
-		c2 = sc.nextInt();
-		qtd2 = sc.nextInt();
-		valor2 = sc.nextDouble();
+		System.out.println("Digite a quantidade: ");
+		int qtd = sc.nextInt();
 
-		total = qtd1 * valor1 + qtd2 * valor2;
+		if (cod == 1) {
+			total = qtd * 4;
+		} else if (cod == 2) {
+			total = qtd * 4.5;
+		} else if (cod == 3) {
+			total = qtd * 5;
+		} else if (cod == 4) {
+			total = qtd * 2;
+		} else if (cod == 5) {
+			total = qtd * 1.5;
+		} else {
+			System.out.println("CÓDIGO INVÁLIDO");
+		}
 
-		System.out.printf("VALOR A PAGAR = R$ %.2f%n", total);
+		Locale.setDefault(Locale.US);
+		System.out.printf("Total : R$ %.2f%n", total);
 
 		sc.close();
 	}

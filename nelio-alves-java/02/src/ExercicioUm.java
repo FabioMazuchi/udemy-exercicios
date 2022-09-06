@@ -2,15 +2,19 @@ import java.util.Scanner;
 
 public class ExercicioUm {
 	public static void main(String[] args) {
-		int x, y, soma;
+		int n;
 
 		Scanner sc = new Scanner(System.in);
 
-		x = sc.nextInt();
-		y = sc.nextInt();
+		System.out.print("Digite um número inteiro: ");
+		n = sc.nextInt();
 
-		soma = x + y;
+		if (n < 0) {
+			System.out.println("NEGATIVO");
+		} else {
+			System.out.println("NÃO NEGATIVO");
+		}
 
-		System.out.println("SOMA = " + soma);
+		sc.close();
 	}
 }
